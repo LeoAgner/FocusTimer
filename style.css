@@ -1,0 +1,70 @@
+:root {
+    --bg-color: #121214;
+    --bg-primary-light: hsla(194, 100% 63%, 0.13);
+    --primary-color: #42d3ff;
+    --base-color: 194;
+    
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    min-height: 100vh;
+    align-self: end;
+}
+
+main {
+    align-self: end;
+    justify-self: center;
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button svg {
+    width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+#timer {
+    font-size: 8.8rem;
+    display: flex;
+    font-size: clamp(4rem, 4rem + 10rem, 8.5rem);
+    margin-bottom: 1.6rem;
+}
+
+#controls {
+    background-color: rgb(43, 47, 85);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.2rem;
+    width: clamp(10rem, 10rem + 30vw, 22.8rem);
+    height: clamp(8rem, 5rem + 10vw, 10.8rem);
+
+    border-radius: 9999px;
+}
+
+footer {
+    align-self: end;
+    justify-self: end;
+    padding: 0 4rem 3.2rem 0;
+}
